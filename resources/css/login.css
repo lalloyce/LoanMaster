@@ -1,91 +1,48 @@
-html, body {
-    background: none repeat scroll 0% 0% rgb(238, 240, 242);
-    font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
-    font-size: 12px;
-    margin: 0;
-    padding: 0;
+body {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    height: 100vh !important;
+    margin: 0 !important;
+    background-color: #f0f0f0 !important;
+    font-family: 'Lato', 'Roboto', Arial, sans-serif !important;
 }
 
-#wrapper {
-    margin: 0 auto;
-    padding-top: 200px;
-    width: 20%;
-}
-
-#app_header {
-    text-align: center;
-}
-
-/* Bordered form */
 form {
-    border: 3px solid #f1f1f1;
+    background-color: #fff !important;
+    padding: 50px !important; /* Increase padding to increase form size */
+    border-radius: 5px !important;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1) !important;
+    width: 60%; /* Adjust this value to change the form width */
+    margin: auto; /* Center the form */
 }
 
-/** Login **/
-#login {
-    padding-top: 300px
+input[type="email"], input[type="password"] {
+    border-radius: 10px !important; /* Make text boxes round cornered */
+    margin-bottom: 15px !important; /* Add height between text boxes */
 }
 
-#login .form-wrap {
-    width: 30%;
-    margin: 0 auto;
+input[type="submit"] {
+    background-color: #4CAF50 !important;
+    color: white !important;
+    padding: 14px 20px !important;
+    margin: 8px 0 !important;
+    border: none !important;
+    cursor: pointer !important;
+    width: 100% !important;
+    border-radius: 4px !important;
 }
 
-#login h1 {
-    color: #212121;
-    font-size: 18px;
-    text-align: center;
-    font-weight: bold;
-    padding-bottom: 20px;
+input[type="submit"]:hover {
+    opacity: 0.8 !important;
 }
 
-#login .form-group {
-    margin-bottom: 25px;
-}
-
-#login .checkbox {
-    margin-bottom: 20px;
-    position: relative;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    -o-user-select: none;
-    user-select: none;
-}
-
-#login .checkbox.show:before {
-    content: '\e013';
-    color: #212121;
-    font-size: 17px;
-    margin: 1px 0 0 3px;
-    position: absolute;
-    pointer-events: none;
-    font-family: 'Glyphicons Halflings';
-}
-
-#login .checkbox .character-checkbox {
-    width: 25px;
-    height: 25px;
-    cursor: pointer;
-    border-radius: 3px;
-    border: 1px solid #ccc;
-    vertical-align: middle;
-    display: inline-block;
-}
-
-#login .checkbox .label {
-    color: #fff;
-    font-size: 13px;
-    font-weight: normal;
-}
-
-#login .btn.btn-custom {
-    font-size: 14px;
-    margin-bottom: 20px;
-}
-
-#login .forget {
-    font-size: 13px;
-    text-align: center;
-    display: block;
+a {
+    display: block !important;
+    margin-top: 20px !important;
+    text-align: center !important;
+    text-decoration: none !important;
+    color: #4CAF50 !important;
+    margin-bottom: 30px !important; /* Create space between the links */
+    width: 100%; /* Make the links take up the full width of the form */
 }

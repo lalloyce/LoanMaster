@@ -1,5 +1,5 @@
-CREATE DATABASE `loanshark`;
-USE `loanshark`;
+CREATE DATABASE IF NOT EXISTS `loanmaster`;
+USE `loanmaster`;
 
 DROP TABLE IF EXISTS `user_accounts`;
 CREATE TABLE `user_accounts` (
@@ -10,6 +10,7 @@ CREATE TABLE `user_accounts` (
   `lname`     VARCHAR(50)  NOT NULL,
   `user_type` VARCHAR(50)  NOT NULL,
   `status`    VARCHAR(10)  NOT NULL,
+  'reset_token' VARCHAR(20),
   PRIMARY KEY (`id`),
   UNIQUE KEY `id` (`id`, `email`)
 );
@@ -34,5 +35,5 @@ CREATE TABLE `installments` (
 
 -- INSERT Data --
 INSERT INTO `user_accounts`
-VALUES (1, 'nu1silva@gmail.com', '5f4dcc3b5aa765d61d8327deb882cf99', 'Nuwan', 'Silva', 'PREMIUM', 'ACTIVE'
+VALUES (1, 'lalloyce@gmail.com', '5f4dcc3b5aa765d61d8327deb882cf99', 'Lawrence', 'Juma', 'PREMIUM', 'ACTIVE'
 );

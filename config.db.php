@@ -3,8 +3,8 @@
 return (object)array(
     'hostname' => 'localhost',
     'username' => 'root',
-    'password' => 'root',
-    'database' => 'loanshark'
+    'password' => 'D#FR$GG#D',
+    'database' => 'loanmaster'
 );
 
 ?>
